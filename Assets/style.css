@@ -1,9 +1,30 @@
-.score {
-    font-size:20;
+.h3 {
     text-align:left;
 }
 
 .head {
     font-size: 50px;
     text-align: center;
+}
+
+section {
+    margin: auto;
+    background-color: blue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 1183px) {
+    main {
+         flex: auto;
+    }
+}
+
+@media screen and (max-width: 504px) {
+
 }
