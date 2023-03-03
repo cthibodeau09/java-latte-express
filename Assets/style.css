@@ -1,15 +1,33 @@
-.h3 {
-    text-align:left;
-}
-
+/* Header */
 .head {
     font-size: 50px;
     text-align: center;
 }
 
-section {
+
+/* Main */
+body { 
+    font-family: Barlow;
+}
+
+.btn-secondary {
     margin: auto;
-    background-color: blue;
+    position: absolute;
+   float: left;
+   font-family: Barlow;
+}
+
+.right {
+    float: right;
+    font-family: Barlow;
+}
+
+
+section {
+    width: 850px;
+    height: 800px;
+    margin: auto;
+    background-color: #0dcaf0;
     border-style: solid;
     border-color: black;
     border-radius: 10px;
@@ -20,11 +38,26 @@ section {
 /* Media queries */
 
 @media screen and (max-width: 1183px) {
+    .head {
+        font-size: 35px;
+    }
     main {
          flex: auto;
+    }
+    section {
+        width: 650px;
+        height: 650px;
     }
 }
 
 @media screen and (max-width: 504px) {
-
+    .head {
+        font-size: 25px;
+    }
+    
+    section {
+        width:450px ;
+        height:450px ;
+      
+    }
 }
