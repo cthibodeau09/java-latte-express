@@ -33,7 +33,14 @@ section {
     border-radius: 10px;
 }
 
+form {
 
+    width: 300px;
+    height: 300px;
+    margin-top: 30%;
+    margin-left: 40%;
+    position: relative;
+}
 
 /* Media queries */
 
