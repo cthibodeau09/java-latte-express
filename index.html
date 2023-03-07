@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Java Latte Express</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap" rel="stylesheet">
-
-    
-    <link rel="stylesheet" type="text/css" href="/Users/courtney/Desktop/challenges/java-latte-express/Assets/style.css"/>
-
-    <title>Java Latte Express</title>
+    <link rel="stylesheet" type="text/css" href="/Users/courtney/Desktop/challenges/java-latte-express/Assets/style.css"/>  
 </head>
 <body>
     <header>
-        <div class="head">JavaScript Quiz</div>
+     
     </header>
+
     <main>
-        
-        <section>
-            
-            <button type="submit" class="btn btn-secondary" >View high scores</button>
-                <h4 class="right">Time:</h4>
-           
-<br>
-<br>
+     
 
-
-                <form><div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                      Default radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                      Second default radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                      Disabled radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                      Disabled radio
-                    </label>
-                  </div>
-                </form>
-        </section>
+<section>
+    <button type="submit" class="btn btn-secondary" >View high scores</button>
+    <timer class="right">
+        Time: 
+    <span id="time">60 </span>       
+</timer>
+<div class="head">JavaScript Quiz</div>
+<p>Try to answer the following Javascript questions before the time runs out!</p>
+<div id="start">Start Quiz</div>  
+<div id="question"><p>Question</p></div>
+    <div id="timer"></div>
+        <div id="counter">60</div>
+</div>
+<div id="choices"></div>
+    <div class="choice" id="A" onlick="checkAnswer('A')"></div>
+    <div class="choice" id="B" onlick="checkAnswer('B')"></div>
+    <div class="choice" id="C" onlick="checkAnswer('C')"></div>
+    <div class="choice" id="D" onlick="checkAnswer('D')"></div>
+</div>
+<div id="progress"><div class="prog"></div>
+</div>
+<div id="scoreContainer" style = "display : none;"></div>
+</div>
+</section>
     </main>
     <script src="/Users/courtney/Desktop/challenges/java-latte-express/Assets/js/script.js"></script>
 </body>
