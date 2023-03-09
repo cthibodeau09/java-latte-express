@@ -10,4 +10,9 @@ Feeling exteremly discouraged as I paid a lot of money for this course and feel 
 
 citations:
 script.js file: 
-(2018, October 18). Create a Multiple Choice Quiz App Using JavaScript | JavaScript Project For Beginners. Youtube. Retrieved March 6, 2023, from https://www.youtube.com/watch?v=49pYIMygIcU
+(2018, October 18). Create a Multiple Choice Quiz App Using JavaScript | JavaScript Project For Beginners. Youtube. Retrieved March 6, 2023, from https://www.youtube.com/watch?v=49pYIMygIcU![Screenshot 2023-03-06 at 10 55 24 PM]
+
+
+This is what my webpage looks like at the moment, but my CSS is not working
+
+(https://user-images.githubusercontent.com/123329107/223883236-cbe99b38-41eb-40e7-9747-a2fc05aa7d5f.png)
