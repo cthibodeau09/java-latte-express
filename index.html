@@ -10,25 +10,25 @@
 </head>
 <body>
     <header>
-     
+        <button type="submit" class="btn btn-secondary" >View high scores</button>
+        <timer class="right">
+            Time: 
+        <span id="time">60 </span>       
+    </timer>
     </header>
 
     <main>
      
-
 <section>
-    <button type="submit" class="btn btn-secondary" >View high scores</button>
-    <timer class="right">
-        Time: 
-    <span id="time">60 </span>       
-</timer>
+
 <div class="head">JavaScript Quiz</div>
 <p>Try to answer the following Javascript questions before the time runs out!</p>
-<div id="start">Start Quiz</div>  
-<div id="question"><p>Question</p></div>
-    <div id="timer"></div>
-        <div id="counter">60</div>
-</div>
+<button id="start" class="btn">Start Quiz</button>  
+</section>
+
+<section id="questions" class="hide">
+<h2 id="question">Questions</h2>>
+
 <div id="choices"></div>
     <div class="choice" id="A" onlick="checkAnswer('A')"></div>
     <div class="choice" id="B" onlick="checkAnswer('B')"></div>
