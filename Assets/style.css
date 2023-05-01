@@ -10,14 +10,14 @@ body {
     font-family: Barlow;
 }
 
-.btn-secondary {
+.btn {
     margin: auto;
     position: absolute;
    float: left;
    font-family: Barlow;
 }
 
-.right {
+.timer {
     float: right;
     font-family: Barlow;
 }
@@ -34,7 +34,7 @@ section {
 }
 
 
-#submit {
+#start {
     border-style: solid;
     border-color: black;
     border-radius: 10px;
