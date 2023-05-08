@@ -1,18 +1,16 @@
 # java-latte-express
 
 ## Description
-The webpage is supposed to contain a mulitple choice quiz. 
-However, we were never taught anything like this and I was unable to complete the assignment as I would be plagarizing the entire assignment by getting examples from others just to piece it together. So the website contains my own HTML and CSS, with Javascript coding from an example on youtube which is cited below. I stopped putting the code in because I simply do not understand what I am even writing or why I am writing it, again never taught what we are supposed to be putting in THIS assignment. 
+The purpose of this application is to test a persons knowledge in JavaScript. Students will be presented with multiple choice JavaScript questions and will be required to select an answer. Once the quiz is completed, the quiz can be saved in order to try and beat the previous score aquired. This application includes CSS, HTML and JavaScript. 
 
-I had a tutor session but she cancelled on me because she was having technical difficulites and I was never able to reschedule as there were no time slots availabe. 
+## Usage
+Select the start button to begin the quiz. Answer the questions by selecting the correct answer(A-D) Once completed you can Save your scores, or view previous scores listed. 
 
-Feeling exteremly discouraged as I paid a lot of money for this course and feel that I have not been taught properly, in a way that I can understand or comprehend to apply to future assignments. Very dissapointed. 
+## Features
+This application features multiple choice questions, and timer which show the time left for the quiz. 
 
-citations:
+## credits
 script.js file: 
 (2018, October 18). Create a Multiple Choice Quiz App Using JavaScript | JavaScript Project For Beginners. Youtube. Retrieved March 6, 2023, from https://www.youtube.com/watch?v=49pYIMygIcU![Screenshot 2023-03-06 at 10 55 24 PM]
 
 
-This is what my webpage looks like at the moment, but my CSS is not working
-
-(https://user-images.githubusercontent.com/123329107/223883236-cbe99b38-41eb-40e7-9747-a2fc05aa7d5f.png)
