@@ -1,6 +1,6 @@
 // Timer
 let timerEl = document.querySelector(".timer");
-let secondsLeft = 30;
+let secondsLeft = 60;
 let scoreEl = document.querySelector(".score");
 
 // Start Quiz
@@ -53,7 +53,7 @@ let runningQuestion = 0;
 
 function startQuiz() {
     isWin = false;
-    timerEl = 30; 
+    timerEl = 60; 
     // Prevents start button from being clicked when round is in progress
     startBtn.disabled = true;
     renderBlanks()
