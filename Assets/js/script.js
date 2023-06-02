@@ -41,15 +41,6 @@ const questions = [
 },
 ]
 
-function startQuiz() {
-    introEl.style.display = "none";
-    questionsEl.style.display = "block";
-    currentQuestion = 0;
-
-    startTimer();
-    questions(currentQuestion);
-} 
-
 function startTimer() {
     let timerInterval = setInterval(function() {
         secondsLeft--;
@@ -63,6 +54,14 @@ function startTimer() {
         }
     }, 1000);
 }
+function startQuiz() {
+    introEl.style.display = "none";
+    questionsEl.style.display = "block";
+    currentQuestion = 0;
+
+    startTimer();
+    questions(currentQuestion);
+} 
 
     // Set questions
     function setQuestions(id) {
