@@ -23,21 +23,30 @@
 <div class="head">JavaScript Quiz</div>
 <p>Try to answer the following JavaScript questions before the time runs out!</p>
 <button id="start" class="btn">Start Quiz</button>  
+</section>
 
-
-<div id="questions" class="hide">
+<section id="questions" class="hide">
 <h2 id="question">Questions</h2>>
 
-<div id="choices"></div>
-    <div class="choice" id="A" onlick="checkAnswer('A')"></div>
-    <div class="choice" id="B" onlick="checkAnswer('B')"></div>
-    <div class="choice" id="C" onlick="checkAnswer('C')"></div>
-    <div class="choice" id="D" onlick="checkAnswer('D')"></div>
-</div>
-<div id="progress"><div class="prog"></div>
-</div>
-<div id="scoreContainer" style = "display : none;"></div>
-</div>
+<ul id="choices"></div>
+    <li class="choice" id="answer1" class="ansBtn">"Answer1</button></li>
+    <li class="choice" id="answer2" onlick="checkAnswer('2')"></li>
+    <li class="choice" id="answer3" onlick="checkAnswer('3')"></li>
+    <li class="choice" id="answer4" onlick="checkAnswer('4')"></li>
+</section>
+
+<!--Final Score-->
+<section id="final" class="hide">
+    <h2>All done!</h2>
+    <p>Your final score is: <span class="score">0</span> </p>
+    <p>Enter initials: <input placeholder="initials" id="initials" /><button id="submit-score" class="btn">Submit</button></p>
+</section>
+<!--High Scores Section-->
+<section id="highscores" class="hide">
+    <h2>High Scores</h2>
+    <ol id="score-list"></ol>
+    <button id="goback" class="btn">Go Back</button>
+    <button id="clearscores" class="btn">Clear High Scores</button>
 </section>
     </main>
     <script src="./Assets/js/script.js"></script>
