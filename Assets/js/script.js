@@ -24,10 +24,6 @@ const submitScoresBtn = document.querySelector("#submit-score");
 const goBackBtn = document.querySelector("#goback");
 const clearScoresBtn = document.querySelector("#clearscores");
 
-
-const progress = document.getElementById("progress");
-const scoreContainer = document.getElementById("scoreContainer");
-
 // End of game
 const finalEl = document.querySelector("#final");
 let initialsInput = document.querySelector("#initials");
@@ -45,9 +41,6 @@ const questions = [
 },
 ]
 
-const lastQuestion = questions.length - 1 ; 
-let runningQuestion = 0;
-
 function startQuiz() {
     introEl.style.display = "none";
     questionsEl.style.display = "block";
@@ -58,12 +51,12 @@ function startQuiz() {
 } 
 
 function startTimer() {
-    let timeInterval = setInterval(function() {
+    let timerInterval = setInterval(function() {
         secondsLeft--;
-        timerEl.textContent = 'Time: ${secondsLeft}';
+        timerEl.textContent = 'Time:${secondsLeft}';
 
         if (secondsLeft === 0 || currentQuestion === questions.length) {
-            clearInterval(timeInterval);
+            clearInterval(timerInterval);
             questionEl.style.display = "none";
             finalEl.style.display = "block";
             scoreEl.textContent = secondsLeft;
