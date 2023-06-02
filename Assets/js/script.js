@@ -1,4 +1,4 @@
-/*var startButton = document.querySelector(".startButton");
+var startButton = document.querySelector(".startButton");
 var timerElement = document.querySelector(".timer-count");
 
 var timerCount; 
@@ -10,7 +10,7 @@ function startQuiz() {
     startButton.disabled = true;
     renderBlanks()
     startTimer()
-} */
+} 
 
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
@@ -26,23 +26,21 @@ const progress = document.getElementById("progress");
 const scoreContainer = document.getElementById("scoreContainer");
 
 
-let questions = [
+const questions = [
 {
     question : "what color is the sky?",
-    choiceA : "Green",
-    choiceB : "Yellow",
-    choiceC : "Red",
-    choiceD : "Blue",
-    correct : "D"
+    answers: ["1. green", "2. red", "3. purple", "4. blue"],
+    correctAnswer: "4. blue"
 },
 ]
 
 array [ a, b, c, d]
-let lasQuestionIndex = questions.length - 1 ; 
-let runningQuestionIndex = 0;
+const lastQuestion = questions.length - 1 ; 
+let runningQuestion = 0;
 
 function renderQuestion(){
     let q = questions[runningQuestionIndex];
+
     question.innerHTML = "<p>" + q.question + "</p>";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
@@ -50,11 +48,36 @@ function renderQuestion(){
     choiceD.innerHTML = q.choiceD;
 }
 
-function progressRender(){
-    for(let qIndex = 0; qIndex <= lasQuestionIndex; qIndex++){
+start.style.display= "none";
+renderQuestion();
+quiz.style.display= "block";
+
+
+function renderProgress(){
+    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
         progress.innerHTML =+ "<div class='prog' id=" + qIndex + "></div>";
     }
 }
+
+let count
+const questionTime = 30;//
+
+function renderCounter(){
+    if(count <= questionTime){
+        counter.innerHTML = count;
+        count++;
+    } else {
+        count = 0;
+        answerIsWrong();
+        if(runningQuestion , lastQuestion){
+            runningQuestion++;
+            questionRender();
+        }else { clearInterval(TIMER);
+        scoreRender();
+    }
+    }
+}
+
 function answerIsCorrect(){
         document.getElementById(runningQuestionIndex).System.out.printIn("Correct!")
     } 
@@ -66,21 +89,7 @@ function answerIsWrong(){
 const questionTime = 30; //30 seconds for every question
 let count = 0;
 
-function counterRender(){
-    if(count <= questionTime){
-        counter.innerHTML = count;
-        count++;
-    } else {
-        count = 0;
-        answerIsWrong();
-        if(runningQuestionIndex , lasQuestionIndex){
-            runningQuestionIndex++;
-            questionRender();
-        }else { clearInterval(TIMER);
-        scoreRender();
-    }
-    }
-}
+
 let score = 0;
 function checkAnswer(answer){
     if(questions[runningQuestionIndex].correct == answer){
