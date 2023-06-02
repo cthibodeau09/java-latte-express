@@ -1,30 +1,43 @@
-var startButton = document.querySelector(".startButton");
-var timerElement = document.querySelector(".timer-count");
+// Timer
+let timerEl = document.querySelector(".timer");
+let secondsLeft = 30;
+let scoreEl = document.querySelector(".score");
 
-var timerCount; 
-
-function startQuiz() {
-    isWin = false;
-    timerCount = 30; 
-    // Prevents start button from being clicked when round is in progress
-    startButton.disabled = true;
-    renderBlanks()
-    startTimer()
-} 
-
+// Start Quiz
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
-const question = document.getElementById("question");
 const counter = document.getElementById("counter");
 
-const choiceA = document.getElementById("A");
-const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
-const choiceD  = document.getElementById("D");
+// Questions
+const questionsEl = document.querySelector("#questions");
+let questionEl = document.querySelector("#question");
+let currentQuestion = 0;
+const rightWrongEl = document.querySelector("#right-wrong");
+
+//Buttons
+const viewScoreBtn = document.querySelector("#view-scores");
+const startBtn = document.querySelector("#start");
+const ansBtn = document.querySelectorAll("button.ansBtn")
+const choiceABtn = document.querySelector("#A");
+const choiceBBtn = document.querySelector("#B");
+const choiceCBtn = document.querySelector("#C");
+const choiceDBtn = document.querySelector("#D");
+const submitScoresBtn = document.querySelector("#submit-score");
+const goBackBtn = document.querySelector("#goback");
+const clearScoresBtn = document.querySelector("#clearscores");
+
 
 const progress = document.getElementById("progress");
 const scoreContainer = document.getElementById("scoreContainer");
 
+// End of game
+const finalEl = document.querySelector("#final");
+let initialsInput = document.querySelector("#initials");
+
+    // High Scores
+const highScoresEl = document.querySelector("#highscores");
+let scoreListEl = document.querySelector("#score-list");
+let scoreList = [];
 
 const questions = [
 {
@@ -37,6 +50,15 @@ const questions = [
 array [ a, b, c, d]
 const lastQuestion = questions.length - 1 ; 
 let runningQuestion = 0;
+
+function startQuiz() {
+    isWin = false;
+    timerEl = 30; 
+    // Prevents start button from being clicked when round is in progress
+    startBtn.disabled = true;
+    renderBlanks()
+    startTimer()
+} 
 
 function renderQuestion(){
     let q = questions[runningQuestionIndex];
@@ -58,9 +80,6 @@ function renderProgress(){
         progress.innerHTML =+ "<div class='prog' id=" + qIndex + "></div>";
     }
 }
-
-let count
-const questionTime = 30;//
 
 function renderCounter(){
     if(count <= questionTime){
