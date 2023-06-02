@@ -1,12 +1,10 @@
 // Timer
-let timerEl = document.querySelector(".timer");
+let timerEl = document.querySelector("p.timer");
 let secondsLeft = 60;
 let scoreEl = document.querySelector(".score");
 
-// Start Quiz
-const start = document.getElementById("start");
-const quiz = document.getElementById("quiz");
-const counter = document.getElementById("counter");
+// Intro
+const introEl = document.querySelector("#intro");
 
 // Questions
 const questionsEl = document.querySelector("#questions");

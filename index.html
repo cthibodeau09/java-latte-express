@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./Assets/style.css"/>  
 </head>
+
 <body>
     <header class="header">
         <!--High scores-->
@@ -16,14 +17,14 @@
          <p class="timer">Time:60</p>     
     </header>
 
-    <main>
+    <main class="container">
      
-<section>
+<section id="intro">
 
-<div class="head">JavaScript Quiz</div>
+<h1 class="head">JavaScript Quiz</h1>
 <p>Try to answer the following JavaScript questions before the time runs out!</p>
 <button id="start" class="btn">Start Quiz</button>  
-</section>
+
 
 <section id="questions" class="hide">
 <h2 id="question">Questions</h2>>
@@ -33,7 +34,7 @@
     <li class="choice" id="answer2" onlick="checkAnswer('2')"></li>
     <li class="choice" id="answer3" onlick="checkAnswer('3')"></li>
     <li class="choice" id="answer4" onlick="checkAnswer('4')"></li>
-</section>
+
 
 <!--Final Score-->
 <section id="final" class="hide">
