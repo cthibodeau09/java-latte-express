@@ -24,23 +24,21 @@
     <p>Try to answer the following JavaScript questions before the time runs out!</p>
     <button id="start" class="btn">Start Quiz</button>  
 
-
-<class id="questions" class="hide">
-    <h2 id="question">Questions</h2>>
-
-    <ul id="choices"></div>
-        <li class="choice" id="answer1" class="ansBtn">Answer1</button></li>
-        <li class="choice" id="answer2" class="ansBtn">Answer2</li>
-        <li class="choice" id="answer3" class="ansBtn">Answer3</li>
-        <li class="choice" id="answer4" class="ansBtn">Answer4</li>
-
+<hr>
+ <!--Q&A Section-->
+ <class id="questions" class="hide">
+    <h2 id="question">Question</h2>
+    <ul id="alist">
+        <li class="achoice"><button id="answer1" class="ansBtn">Answer1</button></li> 
+        <li class="achoice"><button id="answer2" class="ansBtn">Answer2</button></li>
+        <li class="achoice"><button id="answer3" class="ansBtn">Answer3</button></li>
+        <li class="achoice"><button id="answer4" class="ansBtn">Answer4</button></li>
+    </ul>
     <div id="right-wrong">
         <hr>
     </div>
 
-<!--Final Score-->
 <class id="final" class="hide">
-    <h2>All done!</h2>
     <p>Your final score is: <span class="score">0</span> </p>
     <p>Enter initials: <input placeholder="initials" id="initials" /><button id="submit-score" class="btn">Submit</button></p>
 
@@ -50,8 +48,8 @@
     <ol id="score-list"></ol>
     <button id="goback" class="btn">Go Back</button>
     <button id="clearscores" class="btn">Clear High Scores</button>
-</section>
-    </main>
+
+</main>
     <script src="./Assets/js/script.js"></script>
 </body>
 </html>
